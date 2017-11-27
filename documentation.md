@@ -9,8 +9,11 @@ This application shows schools and medical centers in USA on a map. Most importa
 
 This is it in action:
 
+Screenshot of facilities search
 ![Screenshot of facilities search](screenshot-search.png)
+Screenshot of intersections area
 ![Screenshot of intersections area](screenshot-area.png)
+Screenshot of intersections area in urban area
 ![Screenshot of intersections area in urban area](screenshot-area-urban_area.png)
 
 The application has 2 separate parts, the client which is a [frontend web application](#frontend) using mapbox API and mapbox.js and the [backend application](#backend) written in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/) and [ASP.net](https://www.asp.net), backed by PostGIS. The frontend application communicates with backend using a [REST API](#api).
