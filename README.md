@@ -20,8 +20,27 @@ Build a map-based application, which lets the user see geo-based data on a map a
 
 Fill in (either in English, or in Slovak):
 
-**Application description**: `<fill in>`
+**Application description**: 
 
-**Data source**: `<fill in>`
+Web application in C# with ASP.NET using REST API with POST method which is used for communication in GeoJSON messages. GeoJSON data are retrieved from Postgis database. Frontend Mapbox SDK map is  showing facilities, respectively private and public schools and medical centers. In addition it is showing intersection areas of radius areas and urban areas of cities. 
 
-**Technologies used**: `<fill in>`
+Simply said, application is providing this 3 scenarios:
+- **Find selected facilities in radius from marker**
+- **Find areas of intersection in radius from marker which shows areas in selected distance from schools and medical centers**
+- **Find areas of intersection which shows areas in selected distance from schools and medical centers which are in urban areas of city where the marker is**
+
+**Data source**: 
+
+- [Arcgis hub](https://hub.arcgis.com)
+    - [Private schools](https://hub.arcgis.com/datasets/DHS-GII::private-schools) 
+    - [Public schools](https://hub.arcgis.com/datasets/DHS-GII::public-schools)
+    - [Medical centers](https://hub.arcgis.com/datasets/7427f63124164c5aaaad4e5aa62bd3ee_0)
+- [Standford Earthworks](https://earthworks.stanford.edu)
+    - [Urban areas of cities](https://earthworks.stanford.edu/catalog/stanford-vt734jy6725)
+
+**Technologies used**: 
+
+- C#
+- ASP.NET
+- [PostGIS](http://postgis.net/)
+- [Mapbox](http://mapbox.com) and MapBox SDK with styles
